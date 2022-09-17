@@ -20,7 +20,7 @@ main {
     padding: 2%;
     width: 80%;
     margin: auto;
-    border-bottom: 2px gray inset;
+    border-bottom: 2px gray groove;
     
 }
 .grid-1-a {
