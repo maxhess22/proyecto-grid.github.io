@@ -116,7 +116,7 @@ main {
     object-fit: contain;
 }
 
-@media  screen and (max-width:400px) {
+@media  screen and (max-width:576px) {
     .img-1 {
         display: none;
     }
@@ -130,12 +130,20 @@ main {
         padding: 10%;
         grid-template-columns: 3fr;
         justify-content:space-between;
-        background-image: url("./fotos/hero.png");
+        background-image: url("./fotos/pixel-g621a87b9e_640.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        opacity: 100%;
+        filter:brightness(1);
+        color: antiquewhite;
+        text-shadow: 1px 1px;
         
+        
+        
+    }
+    .button{
+        padding: 2%;
+        width: 100%;
     }
 
 }
