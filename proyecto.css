@@ -7,13 +7,18 @@
     
 }
 body {
-    background-image: url("./fotos/Fondo-body.jpg");
+    background-image: url("./fotos/pixil-frame-0.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 main {
+    margin-top: 20px;
     width: 50%;
     margin: auto;
+    background-color: white;
+    border: 2px royalblue outset;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px cornflowerblue;
 }
 .grid-1{
     display: grid;
@@ -25,7 +30,7 @@ main {
     margin-top: 10px;
     padding: 2%;
     margin: auto;
-    border-bottom: 1px gray outset;
+    
     width: 80%;
     
 }
@@ -64,6 +69,11 @@ main {
 }
 .grid-2-a{
     grid-area: 1/ 1 / 3/ 3 ;
+}
+#gift {
+    object-fit: contain;
+    align-self: center;
+    justify-self: center;
 }
 .grid-2-img1{
     
@@ -129,8 +139,8 @@ main {
         display: none;
     }
     main{
-        width: 100%;
-        margin: 0;
+        width: 80%;
+        margin: auto;
         padding: 0;
     }
     .grid-1{
@@ -142,7 +152,7 @@ main {
         
     }
     .grid-2{
-        grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 200px)); 
     }
     .grid-3 {
         justify-items: center;
