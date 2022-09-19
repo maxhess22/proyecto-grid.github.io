@@ -5,20 +5,24 @@
     font-family: 'Roboto', sans-serif;
     color: white;
     
+    
+}
+p{
+    font-size: 1.3rem;
 }
 body {
-    background-image: url("./fotos/Captura.PNG");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to bottom , aqua, hotpink, MidnightBlue);
+    
+  
 }
 main {
     margin-top: 20px;
     width: 50%;
     margin: auto;
     background-color: white;
-    border: 3px royalblue outset;
+    border: 1px ghostwhite inset;
     border-radius: 20px;
-    box-shadow: 0 0 5px 1px cornflowerblue;
+    
 }
 .grid-1{
     display: grid;
@@ -26,13 +30,10 @@ main {
     grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
-    grid-template-areas: "texto foto";
     margin-top: 10px;
     padding: 2%;
-    margin: auto;
-    
+    margin: auto; 
     width: 80%;
-    
 }
 .grid-1-a {
     align-self: center;
@@ -41,11 +42,13 @@ main {
     justify-content: center;
     justify-items: center;
     gap: 20px;
-   
 }
 .grid-1-b{
-    justify-self: center;
     
+    background-image: url("./fotos/Hero-bulbasaur.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
  header  section div:nth-child(2){
@@ -116,12 +119,16 @@ padding: 2%;
 
 .button {
     width: 30%;
-    background-color: mediumseagreen;
+    background-color: mediumslateblue;
     color: white;
     margin-top: 16px;
     padding: 8px;
     border-radius: 20px;
     border-style: none;
+}
+.button:hover {
+    transform: scale(1.06);
+    transition-duration: 0.2s;
 }
 
 .img-2 {
@@ -147,21 +154,23 @@ footer section div .img-3:hover {
 
 /* Medias query  */
 @media  screen and (max-width:768px) {
-    .img-1 {
+ 
+    .grid-1-b {
         display: none;
     }
     main{
         width: 80%;
-        margin: auto;
+        margin: 20px auto;
         padding: 0;
     }
     .grid-1{
-        background-image: url("./fotos/Hero-bulbasaur.png");
+
+        background-image: url("./fotos/baloon-mobile.gif");
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
-        
-        
+        background-position:right center;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;       
     }
     .grid-2{
         grid-template-columns: repeat(auto-fit, minmax(150px, 120px)); 
@@ -177,6 +186,9 @@ footer section div .img-3:hover {
 }
 
 @media screen and (max-width: 1400px) {
+    .grid-1-b{
+        background-image: url("./fotos/giphy.gif");
+    }
     .grid-2{
         grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
         grid-auto-rows: 1fr;
