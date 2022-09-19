@@ -153,6 +153,7 @@ footer section div .img-3:hover {
 
 
 /* Medias query  */
+
 @media  screen and (max-width:768px) {
  
     .grid-1-b {
@@ -184,6 +185,14 @@ footer section div .img-3:hover {
     }
 
 }
+@media screen and (max-width: 576px) {
+    main{
+        width: 90%;
+        margin: 20px auto;
+        padding: 0;
+    }
+    
+}
 
 @media screen and (max-width: 1400px) {
     .grid-1-b{
@@ -196,7 +205,6 @@ footer section div .img-3:hover {
     .img-3{
         object-fit: contain;
         margin: 20px auto;
-    }
-
-    
+    }   
 }
+
