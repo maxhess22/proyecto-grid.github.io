@@ -178,10 +178,12 @@ footer section div .img-3:hover {
     }
     .grid-3 {
         justify-items: center;
+        width: 70%;
     }
     .img-3{
         object-fit: contain;
         margin: 10px auto;
+        width: 70px;
     }
 
 }
@@ -190,6 +192,13 @@ footer section div .img-3:hover {
         width: 90%;
         margin: 20px auto;
         padding: 0;
+    }
+    .grid-3 {
+        width: 80%;
+    }
+    .img-3 {
+        width: 60px;
+        
     }
     
 }
@@ -204,7 +213,7 @@ footer section div .img-3:hover {
     }
     .img-3{
         object-fit: contain;
-        margin: 20px auto;
+        margin: 20px 16px;
     }   
 }
 
