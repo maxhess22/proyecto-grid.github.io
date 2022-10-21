@@ -104,14 +104,13 @@ padding: 2%;
   
 }
 .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;  
 }
 .title-2 {
     font-size: 3rem;
     color: gold; 
-    margin-top: 64px;
-    margin-bottom: 16px;
+    padding: 16px 0;
     text-align: center;
     text-shadow: 1px 1px 2px navy;
 
@@ -154,6 +153,23 @@ footer section div .img-3:hover {
 
 /* Medias query  */
 
+
+
+
+@media screen and (max-width: 1400px) {
+    .grid-1-b{
+        background-image: url("./fotos/giphy.gif");
+    }
+    .grid-2{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+        grid-auto-rows: 1fr;
+    }
+    .img-3{
+        object-fit: contain;
+        margin: 20px 16px;
+    }   
+}
+
 @media  screen and (max-width:768px) {
  
     .grid-1-b {
@@ -163,6 +179,9 @@ footer section div .img-3:hover {
         width: 80%;
         margin: 20px auto;
         padding: 0;
+    }
+    .title{
+        min-width: 330px;
     }
     .grid-1{
 
@@ -188,32 +207,30 @@ footer section div .img-3:hover {
 
 }
 @media screen and (max-width: 576px) {
+    header{
+        padding: 16px;
+    }
     main{
         width: 90%;
         margin: 20px auto;
         padding: 0;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .grid-2 {
+        grid-template-columns: repeat(4 , minmax(30, 150px));
+        grid-auto-rows: 100px;
+        padding: 16px 0;
     }
     .grid-3 {
         width: 80%;
     }
     .img-3 {
         width: 60px;
-        
     }
     
 }
-
-@media screen and (max-width: 1400px) {
-    .grid-1-b{
-        background-image: url("./fotos/giphy.gif");
-    }
-    .grid-2{
-        grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
-        grid-auto-rows: 1fr;
-    }
-    .img-3{
-        object-fit: contain;
-        margin: 20px 16px;
-    }   
-}
-
